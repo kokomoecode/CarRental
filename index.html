@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Car Rental</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap Files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pl-3 pt-3">
+    <div class="border border-primary float-left pt-3 pl-3 pr-3 pb-3">
+        <h3>ACME Car Rental</h3>
+        <br>
+        <p>
+            <label for="pickupDate">Pickup Date: </label>
+            <input type="date" id="pickupDate">
+        </p>
+        <p>
+            <label for="numberOfDay">Number Of Days: </label>
+            <input type="number" id="numberOfDay">
+        </p>
+
+        <br>
+        <p>Options</p>
+
+        <input type="checkbox" id="eTag" name="etag" value="etag">
+        <label for="eTag">Electronic Toll Tag ($3.95/day)</label></br>
+
+
+
+        <input type="checkbox" id="gps" name="gps" value="gps">
+        <label for="gps">GPS ($2.95/day)</label></br>
+
+        <input type="checkbox" id="roadsideA" name="roadsideA" value="roadsideA">
+        <label for="roadsideA">Roadside Assistance ($2.95/day)</label></br>
+
+
+        <br>
+        <p>Under 25 (30% Surcharge)</p>
+        <input type="radio" name="under" id="yesunder">
+        <label for="yesunder">YES</label>
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="under" id="nounder" checked>
+        <label for="nounder">NO</label>
+        </p>
+        <p>
+            <input type="button" value="Estimate Total Cost" id="calcEstBtn">
+        </p>
+        <p id="carRental"></p>
+        <p id="carOptions"></p>
+        <p id="surCharge"></p>
+        <p id="totalDue"></p>
+
+        <!-- Bootstrap Files -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <script src="scripts.js"></script>
+        </div>
+</body>
+
+</html>
